@@ -1,0 +1,10 @@
+<body>
+    <div class="container-fluid">
+        {{#each customList}}
+            <div class="form-inline">
+                <a href="/movies/{{id}}" style="color: black"> {{title}}</a>
+                <img src="https://image.tmdb.org/t/p/w300{{image}}">
+            </div>
+        {{/each}}
+    </div>
+</body>

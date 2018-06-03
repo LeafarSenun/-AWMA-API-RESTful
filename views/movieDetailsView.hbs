@@ -1,0 +1,42 @@
+<div class="container">
+
+    <form method="POST" action="/favourites">
+        <input type="submit" value="Fav" style="color: black">
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="hidden" name="title" value="{{name}}">
+        <input type="hidden" name="image" value="{{image}}">
+    </form>
+
+    <h1>{{name}}</h1>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="https://image.tmdb.org/t/p/w300{{image}}" class="img-rounded" alt="Cinque Terre">
+            <h2 style="color:white">Director</h2>
+            <h3 style="color:white;">{{director}}</h3>
+        </div>
+        <div class="col-sm-8">
+            <h2 style="color: white">Overview</h2>
+            <p  class="text-justify" style="color:white">{{overview}}</p>
+        </div>
+    </div>
+
+
+    <h1>Cast</h1>
+
+    <pre class="pre-scrollable">
+        <table>
+                <tr>
+                    <th> Actor </th>
+                    <th> Character </th>
+                </tr>
+            {{#each actors}}
+                <tr>
+                        <td><a href="/actors/{{id}}">{{name}}</a></td>
+                        <td>{{character}}</td>
+                    </tr>
+            {{/each}}
+        </table>
+    </pre>
+
+</div>

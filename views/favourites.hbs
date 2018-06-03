@@ -1,0 +1,51 @@
+
+<div class="container-fluid text-center">
+    <h3>My Movie Lists</h3>
+
+    <div class="container">
+        <div class="row">
+            <form class="form-inline" method="post" action="/favourites">
+                <div class="form-group" align="center">
+                    <label for="name">Insert New List</label>
+
+                    <div class="input-group col-sm-5">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-film"></i>
+                        </span>
+                        <input type="text" class="form-control" name="newListName" id="newListName" placeholder="New List" />
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12 center-block">
+                            <button type="submit" class="btn btn-primary btn-lg center-block" align="center">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+                
+            
+            
+            <form class="form-inline" method="post" action="/insertFavouriteMovie">
+            <label for="name">Select List to Insert the Movie</label>
+                <div class="form-group col-sm-5">
+                    <!--<select class="form-control" align="center" id="sel1">-->
+                    {{#each moviesList}}
+                    <input type="submit" value="{{listName}}" name="listToInsert" style="color: black">
+                    <!--</select>-->
+                    {{/each}}
+            </form>
+            <form method="POST" action="/customList">
+                <div class="form-group col-sm-5">
+                    <label for="sel1">Select list to view:</label>
+                    <!--<select class="form-control" align="center" id="sel1">-->
+                        {{#each moviesList}}
+                        <input type="submit" value="{{listName}}" style="color: black">
+                        <input type="hidden" name="movies" value="{{movies}}">
+                    <!--</select>-->
+                    {{/each}}
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+
+    <h1 class="text-center">Movies</h1>
+    <h1 class="text-center">{{err}}</h1>
+
+
+    <table>
+        <tbody>
+        {{#each moviesList}}
+        <tr>
+            {{#each this}}
+                <td> <img src="https://image.tmdb.org/t/p/w154{{image}}" class="img-rounded" alt="Cinque Terre"></td>
+                <td> <a href='/movies/{{id}}'>{{name}}</a></td>
+            {{/each}}
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+body {
+    background-image: url("http://fullhdpictures.com/wp-content/uploads/2015/10/Galaxy-Wallpaper-for-Computer.jpg");
+}
+h1, h2, h3, p, a, li,label{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+tr, tbody{
+    alignment: center;
+}
+td, th{
+    color: white;
+    alignment: center;
+}
+pre{
+    border-color: transparent;
+    background: transparent;
+}

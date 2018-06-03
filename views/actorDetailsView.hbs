@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>{{name}}</h1>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="https://image.tmdb.org/t/p/w300{{image}}" class="img-rounded" alt="Cinque Terre">
+            <h3>{{birthday}} - {{deathday}}</h3>
+            <h2>Place Of Birth</h2>
+            <h3>{{placeOfBirth}}</h3>
+        </div>
+        <div class="col-sm-8">
+            <h2>Biography</h2>
+            <p class="text-justify">{{biography}}</p>
+        </div>
+    </div>
+
+    <h1>Cast</h1>
+
+    <pre class="pre-scrollable">
+            <table>
+                {{#each movies}}
+                    <tr>
+                        <td><a href="/movies/{{id}}">{{original_title}}</a></td>
+                        <td>{{character}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </pre>
+
+</div>
