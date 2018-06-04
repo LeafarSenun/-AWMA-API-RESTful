@@ -1,8 +1,7 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   'express-session' ]
+1 verbose cli   'install' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.3
 4 silly loadCurrentTree Starting
@@ -13,9 +12,9 @@
 9 silly runTopLevelLifecycles Finishing
 10 silly install printInstalled
 11 verbose stack Error: Failed to parse json
-11 verbose stack Unexpected token 'e' at 17:3
-11 verbose stack 	"express-session": "1.14.2"
-11 verbose stack 	 ^
+11 verbose stack Unexpected token 'a' at 18:4
+11 verbose stack   "author": "Leafar",
+11 verbose stack    ^
 11 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:390:11)
 11 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:79:23)
 11 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
@@ -24,15 +23,15 @@
 11 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:444:12)
 12 verbose cwd C:\Users\ThinK\Documents\Heroku things\-AWMA-API-RESTful\-AWMA-API-RESTful
 13 error Windows_NT 10.0.17134
-14 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express-session"
+14 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
 15 error node v6.11.3
 16 error npm  v3.10.10
 17 error file C:\Users\ThinK\Documents\Heroku things\-AWMA-API-RESTful\-AWMA-API-RESTful\package.json
 18 error code EJSONPARSE
 19 error Failed to parse json
-19 error Unexpected token 'e' at 17:3
-19 error 	"express-session": "1.14.2"
-19 error 	 ^
+19 error Unexpected token 'a' at 18:4
+19 error   "author": "Leafar",
+19 error    ^
 20 error File: C:\Users\ThinK\Documents\Heroku things\-AWMA-API-RESTful\-AWMA-API-RESTful\package.json
 21 error Failed to parse package.json data.
 21 error package.json must be actual JSON, not just JavaScript.
