@@ -12,8 +12,8 @@
 9 silly runTopLevelLifecycles Finishing
 10 silly install printInstalled
 11 verbose stack Error: Failed to parse json
-11 verbose stack Unexpected token 'a' at 18:4
-11 verbose stack   "author": "Leafar",
+11 verbose stack Unexpected token 'e' at 18:4
+11 verbose stack   "engines": {
 11 verbose stack    ^
 11 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:390:11)
 11 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:79:23)
@@ -29,8 +29,8 @@
 17 error file C:\Users\ThinK\Documents\Heroku things\-AWMA-API-RESTful\-AWMA-API-RESTful\package.json
 18 error code EJSONPARSE
 19 error Failed to parse json
-19 error Unexpected token 'a' at 18:4
-19 error   "author": "Leafar",
+19 error Unexpected token 'e' at 18:4
+19 error   "engines": {
 19 error    ^
 20 error File: C:\Users\ThinK\Documents\Heroku things\-AWMA-API-RESTful\-AWMA-API-RESTful\package.json
 21 error Failed to parse package.json data.
