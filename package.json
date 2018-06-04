@@ -16,4 +16,8 @@
     "passport": "^0.4.0"
 	"express-session": "1.14.2"
   }
+  "author": "Leafar",
+  "engines": {
+	"node": "6.11.3"
+  }
 }
